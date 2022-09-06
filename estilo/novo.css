@@ -1,0 +1,107 @@
+@charset "UTF-8"; /*Comunica os usuários de qual é a formatação do documento.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=Bebas+Neue&display=swap'); /*fonte da letra*/
+
+
+@font-face { /*Informações sobre fonte escolhida*/
+    font-family: Barlow, sans-serif, cursive;
+    src: url("fontes/Barlow-Italic.ttf") format('opentype');
+    font-weight: normal;
+}
+
+:root { /*Seleção de cores*/
+    --cor0:#E6A5B3;
+    --cor1:#BB93C3;
+    --cor2:#78509C;
+    --cor3:#EEE52C;
+  
+    --fonte-padrao: Barlow, sans-serif, cursive;
+    --fonte-destaque:Barlow, cursive;
+    --font-android: 'Barlow', cursive;
+
+}
+
+body {/*Informação de cores*/
+    background-color: gray;
+    font-family: Barlow;
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb, .breadcrumb-item, .active {
+    color: rgb(255, 255, 255) !important;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Barlow;
+    box-shadow: 3px 3px 3px 3px rgb(71, 71, 71);
+
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+
+.logo {/*Anlinhamento de logo*/
+    text-align: center;
+}
+
+.logo p {/*tamanho de fonte*/
+    font-size: 20px;
+}
+
+.logo img {/**/
+    width: 80em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.py-3, .my-4 {
+    margin-top: 4% !important;
+    padding-bottom: 2px !important;
+}
+
+.index {
+    margin-top: 12% !important;
+}
+
+footer a img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+.text-center, .text-muted {
+    color: rgb(255, 255, 255) !important;
+}
+
+textarea {
+    resize: none;
+}
+
+#btn-limpar {
+    margin-left: 100px;
+}
+
+.modal-body {
+    word-wrap: break-word;
+}
+
+form {
+    padding: 60px;
+}
+
+#titulo-form {
+    text-align: center;
+}
